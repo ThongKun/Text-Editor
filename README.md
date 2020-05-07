@@ -1,0 +1,1 @@
+this is a simple text editor built in HTML, CSS, VanillaJS
