@@ -14,7 +14,7 @@ function updateText() {
     // CODE GOES HERE
     console.log('Triggered')
     let outputText = document.getElementById("text-input").value;
-    document.getElementById("text-output").innerHTML = outputText
+    document.getElementById("text-output").innerText = outputText
 }
 
 /**
@@ -60,6 +60,6 @@ function alignText(elem, alignType) {
     for (let index = 0; index < length; index++) {
         document.getElementsByClassName('align')[index].classList.remove('active')
     }
-    elem.classList.toggle('active');
+    elem.classList.add('active');
     document.getElementById('text-output').style.textAlign = alignType;
 }
